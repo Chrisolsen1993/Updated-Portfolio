@@ -1,0 +1,485 @@
+:root{
+    --desktop: 1200px;
+    --laptop: 1024px;
+    --tablet: 768px;
+    --phone: 480px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+
+
+/* .header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 5%;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+  
+} */
+
+/* .header h1 {
+    
+    font-size: 30px;
+    cursor: pointer;
+    margin-right:auto;
+} */
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin : auto;
+}
+.navbar{
+    z-index: 1;
+    position:fixed;
+    padding: 15px 0px;
+    
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    /* background-color: #24252a; */
+    
+   
+}
+
+.class1{
+    padding: 15px 0;
+     background-color: #24252a;
+     color: snow;
+    
+}
+.navbar .max-width{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+.port{
+    font-family: "Montserrat", 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color:#24252a;
+    font-size: 30px;
+    font-weight:500px;
+}
+.port1{
+    color:snow;
+}
+.a-nav{
+    display:block;
+    font-family: "Montserrat", 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: 500px;
+    font-size:17px;
+    /* color:#92451b; */
+    color: #24252a;
+    text-decoration: none;
+}
+.a-nav1{
+    color: snow;
+}
+.nav-link li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+.nav-link li a{
+    transition: all 0.7s ease 0s;
+}
+.nav-link li a:hover{
+    color: #24252a;
+    /* color:#92451b; */
+}
+/* style menu btn */
+.menu-btn{
+    font-size: 20px;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+/* Home styling */
+.home{
+    display: flex;
+    background: url("https://images.unsplash.com/photo-1518655048521-f130df041f66?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1450&q=80") no-repeat center ;
+    height: 85vh;
+    color: black;
+    min-height: 500px;
+    font-family: "Montserrat", 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+.home .max-width{
+    margin :auto 0 auto 40px;
+}
+.home-content-1{
+    font-size: 30px;
+}
+.home-content-2{
+    font-size: 75px;
+    font-weight:600;
+    margin-left: -4px;
+}
+.home-content-3{
+    font-size: 40px;
+    margin: 5px 0;
+    
+}
+.design1
+{
+    color:#92451b;
+     font-weight:500 ;
+
+}
+.design
+{
+    color:#92451b;
+      ;
+
+}
+/* About me section styling */
+section {
+    padding : 80px 0;
+}
+.about-me-section{
+    font-family:  Montserrat;
+   
+    background: #f8e4e1;
+}
+.title1{
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    
+}
+.title1::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 205px;
+    height: 4px;
+    background: black;
+    transform: translateX(-50%);
+    
+}
+.title1::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color:#92451b;
+    font-weight: 900;
+    padding:5px;
+    background:#f8e4e1;
+    
+    transform: translateX(-50%);
+    
+}
+.about-content, .projects-content{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}.left{
+    width:45%;
+}
+.left img{
+    height :400px;
+    width: 400px;
+    object-fit: cover;
+   
+    border-radius: 6px;
+}
+.right{
+    width: 55%;
+}
+.text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.text span{
+   color: #92451b ;
+}
+.right p{
+    text-align: justify;
+}
+/* Projects section styling */
+.projects{
+    font-family:  Montserrat;
+    background:#fff4f2;
+}
+.projects .title1::after{
+    background:#fff4f2;
+    content: "My works";
+
+}
+.card{
+    width:calc(33% - 20px);
+    text-align: center;
+  background: #f8e4e1;
+    border-radius: 6px;
+    padding: 25px 35px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+.card:hover{
+background: black ;
+color:snow;
+}
+.box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.card:hover .box{
+    transform: scale(1.05)
+}
+.project-title{
+    font-size:25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.day-planner{
+    height:150px;
+    width:150px;
+    object-fit:contain;
+    border-radius: 50%;
+    border: 5px solid #92451b;
+}
+.jobs{
+    height:150px;
+    width:150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #92451b;
+}
+.weather{
+    height:150px;
+    width:150px;
+    object-fit:fill;
+    border-radius: 50%;
+    border: 5px solid #92451b;
+}
+.quiz{
+    height:150px;
+    width:150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #92451b;
+}
+
+
+/* .avatar {
+    height: 700px;
+    width: 100%;
+    margin-bottom: 25px;
+    background: url("https://www.mediabistro.com/wp-content/uploads/2016/02/tips-on-getting-your-copywriter-portfolio-started.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+} */
+/* main{
+    background-color:snow;
+
+} */
+/* .about-me-section {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding:30px;
+    height:200px;
+    
+} */
+/* .about-me-section p{
+font-family:  Montserrat;
+font-size: 20px;
+
+} */
+
+/* .work-section{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+}  */
+/* .work-section:first-child{
+    justify-content: left;
+} */
+
+/* h2, h3{
+    padding:20px;
+}
+
+article{
+    text-align:center;
+} */
+/* .names{
+    position:relative;
+    top:5rem;
+    left:30px;
+
+} */
+
+
+
+
+
+/* footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 5%;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+} */
+footer h2{
+    margin-right:auto;
+    font-size:20px;
+}
+.contact{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size:20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500px;
+    background-color: #24252a;
+    padding: 10px 5%;
+    color:snow;
+}
+.a-link a{
+    color:cyan;
+    display: inline-block;
+    padding: 0px 30px;
+    text-decoration: none;
+    transition: all 0.7s ease 0s;
+    color:snow;
+}
+.a-link a:hover{
+    color:#92451b;
+}
+/* responsive design */
+@media screen and (max-width:1300px){
+    .home .max-width{
+    margin-left: 0px;
+    }
+
+}
+@media screen and (max-width:1104px){
+    .left img{
+        height :300px;
+        width: 300px;   
+    }
+.card{
+    width:50%;
+    margin-right:-20px;
+
+}
+}
+
+@media screen and (max-width:940px){
+    .max-width{
+        
+        padding: 0 50px;  
+    }
+    .menu-btn{
+        
+        display:block;
+        z-index: 1;
+        font-size:25px;
+        font-weight: 300;
+        color: snow;
+    }
+    .menu-btn i.active:before{
+        content:"\f00d";
+        color:black;
+    }
+
+     .nav-link{
+        position:fixed;
+       height: 100vh;
+       width:100%;
+       left:-100%;
+       top:0px;
+       text-align:center;
+       padding-top:80px;
+       background: snow;
+       
+    }
+    .active{
+        left:0;
+    }
+    .nav-link li{
+        display:block;
+    }
+    .nav-link li a{
+        display:inline-block;
+        margin:20px 0;
+        font-size: 20px;
+        color:#24252a;
+    }
+    .home-content-2{
+        font-size: 70px;
+        
+    }
+    .home-content-3{
+        font-size: 35px;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+    .column{
+        width: 100%;
+      }
+      .left{
+          display:flex;
+          justify-content: center;
+          margin: 0 auto 60px; 
+      }
+      .right{
+          flex:100%
+      }
+      .projects .projects-content .card{
+          width: 50%;
+          padding-left: 10px;
+          margin-bottom: 20px; 
+      }
+      .card .box img{
+          height: 100px;
+          width: 100px;
+      }
+}
+@media screen and (max-width:600px){
+    .max-width{
+        
+        padding: 0 20px;  
+    }
+    .home-content-2{
+        font-size: 50px;
+        
+    }
+    .home-content-3{
+        font-size: 30px;
+    }
+   .projects .projects-content .card{
+       width: 100%;
+        
+    }
+    
+}
+
+
+/*  */
+
+  
+  
+
+
