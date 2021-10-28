@@ -19,7 +19,7 @@ Portfolio updated
 
 
 
-![portfolio demo](./Assets/images/ptfolio.png)
+![portfolio ](./assets/images/ptfolio.png)
 
 
 ## Review
@@ -27,5 +27,7 @@ Portfolio updated
 You are required to submit BOTH of the following for review:
 
 * The URL of the deployed application.
+  * [demo](https://chrisolsen1993.github.io/Updated-Portfolio/)
 
 * The URL of the GitHub repository 
+* [Repository](https://github.com/Chrisolsen1993/Updated-Portfolio)

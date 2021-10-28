@@ -224,6 +224,7 @@ section {
     padding: 25px 35px;
     margin-bottom: 20px;
     transition: all 0.3s ease;
+    box-shadow:0 8px 8px -4px lightblue ;
 }
 .card:hover{
 background: black ;
@@ -271,75 +272,12 @@ color:snow;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid #92451b;
-}
-
-
-/* .avatar {
-    height: 700px;
-    width: 100%;
-    margin-bottom: 25px;
-    background: url("https://www.mediabistro.com/wp-content/uploads/2016/02/tips-on-getting-your-copywriter-portfolio-started.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-} */
-/* main{
-    background-color:snow;
-
-} */
-/* .about-me-section {
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
-    padding:30px;
-    height:200px;
     
-} */
-/* .about-me-section p{
-font-family:  Montserrat;
-font-size: 20px;
 
-} */
-
-/* .work-section{
-    display:flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: center;
-}  */
-/* .work-section:first-child{
-    justify-content: left;
-} */
-
-/* h2, h3{
-    padding:20px;
 }
 
-article{
-    text-align:center;
-} */
-/* .names{
-    position:relative;
-    top:5rem;
-    left:30px;
-
-} */
 
 
-
-
-
-/* footer {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px 5%;
-    align-items: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-} */
 footer h2{
     margin-right:auto;
     font-size:20px;
