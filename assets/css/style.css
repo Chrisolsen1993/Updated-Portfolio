@@ -93,8 +93,8 @@ html{
     transition: all 0.7s ease 0s;
 }
 .nav-link li a:hover{
-    color: #24252a;
-    /* color:#92451b; */
+    /* color: #24252a; */
+    color:#92451b;
 }
 /* style menu btn */
 .menu-btn{

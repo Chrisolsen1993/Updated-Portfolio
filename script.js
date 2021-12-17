@@ -1,32 +1,32 @@
-// var name_chars = "Olsen Ogouchi".split('');
-// var name_element = document.getElementById('name-display');
-// console.log(name_element) 
-// var display_name = "";
-// var name_display_interval = setInterval(() => {
-//   if (name_chars.length > 0) {
-//     display_name += name_chars.shift();
-//     name_element.innerHTML = display_name;
-//   } else {
-//     clearInterval(name_display_interval);
-//   }
-// }, 600);
 var name_chars = "Olsen Ogouchi".split('');
-var name_element = document.getElementById('display-name');
+var name_element = document.getElementById('name-display');
+console.log(name_element) 
 var display_name = "";
-var paused = false;
 var name_display_interval = setInterval(() => {
-  if (!paused && name_chars.length > 0) {
+  if (name_chars.length > 0) {
     display_name += name_chars.shift();
     name_element.innerHTML = display_name;
-  } else if (paused) {
-    paused = false;
-    name_chars = display_name.split('');
-    display_name = "";
-    name_element.innerHTML = "";
   } else {
-    paused = true;
+    clearInterval(name_display_interval);
   }
-}, 1000);
+}, 600);
+// var name_chars = "Olsen Ogouchi".split('');
+// var name_element = document.getElementById('display-name');
+// var display_name = "";
+// var paused = false;
+// var name_display_interval = setInterval(() => {
+//   if (!paused && name_chars.length > 0) {
+//     display_name += name_chars.shift();
+//     name_element.innerHTML = display_name;
+//   } else if (paused) {
+//     paused = false;
+//     name_chars = display_name.split('');
+//     display_name = "";
+//     name_element.innerHTML = "";
+//   } else {
+//     paused = true;
+//   }
+// }, 1000);
 
 
 
