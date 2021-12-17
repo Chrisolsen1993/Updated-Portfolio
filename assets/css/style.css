@@ -10,6 +10,12 @@
 
 
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
 
 /* .header {
     display: flex;
@@ -398,7 +404,7 @@ border-radius: 50px;
     width: calc(50% - 40px);
 }
 .contact .right{
-    margin-top: -70px;
+    margin-top: -20px;
 }
 .contact .right form .fields{
 display: flex;
@@ -454,12 +460,18 @@ margin-bottom: 15px;
     color:#92451b;
     background: none;
 }
+.contact a{
+    text-decoration: none;
+    color: black;
+}
 
 
 
-footer h2{
-    margin-right:auto;
-    font-size:20px;
+footer{
+    background: black;
+    padding: 20px 23px;
+    color: white;
+    text-align: center;
 }
 /* .contact{
     display:flex;
@@ -557,7 +569,7 @@ footer h2{
         width: 100%;
       }
       .left{
-          display:flex;
+          /* display:flex; */
           justify-content: center;
           margin: 0 auto 60px; 
       }
