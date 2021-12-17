@@ -1,8 +1,10 @@
 var name_chars = "Olsen Ogouchi".split('');
 var name_element = document.getElementsByClassName('home-content-2');
+var display_name = "";
 var name_display_interval = setInterval(() => {
   if (name_chars.length > 0) {
-    name_element.innerHTML += name_chars.shift();
+    display_name += name_chars.shift();
+    name_element.innerHTML = display_name;
   } else {
     clearInterval(name_display_interval);
   }
