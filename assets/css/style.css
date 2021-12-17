@@ -177,7 +177,7 @@ section {
     transform: translateX(-50%);
     
 }
-.about-content, .projects-content, .skills .skills-content{
+.about-content, .projects-content, .skills .skills-content,.contact .contact-content{
     display:flex;
     flex-wrap: wrap;
     align-items: center;
@@ -288,9 +288,12 @@ color:snow;
     border: 5px solid #92451b;
 }
 /* Skills section styling */
+.skills{
+    background: #f8e4e1;
+}
 .skills .title1::after{
     content:"what i know";
-    background:#fff4f2;
+    background:#f8e4e1;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -331,18 +334,125 @@ color:snow;
 }
 .skills .skills-content .right .html::before{
 width:90%;
+border-radius: 50px;
 }
 .skills .skills-content .right .css::before{
- width:60%;   
+ width:60%;
+border-radius: 50px;   
 }
 .skills .skills-content .right .js::before{
  width:80%;
+border-radius: 50px;
 }
 .skills .skills-content .right .express::before{
     width:85%;
+border-radius: 50px;
 }
 .skills .skills-content .right .mysql::before{
     width:70%;
+border-radius: 50px;
+}
+.skills .skills-content p{
+    font-family:  Montserrat;
+    font-size: 20px;
+
+}
+
+
+/* contact section styling */
+.contact{
+    background:#fff4f2;
+}
+.contact .title1::after{
+    content:"Get in Touch";
+    background:#fff4f2;
+}
+.contact .contact-content p{
+    font-family:  Montserrat;
+    font-size: 20px;
+    text-align: justify;
+
+}
+.contact .contact-content .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display:flex;
+    height:65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 20px;
+}
+.contact .contact-content .row i{
+  font-size: 25px;
+  color:#92451b;
+}
+.contact .contact-content .info .head{
+    font-weight: 600;
+}
+.contact .contact-content .info .sub-title{
+   color:black;
+}
+.contact .contact-content .column{
+    width: calc(50% - 40px);
+}
+.contact .right{
+    margin-top: -70px;
+}
+.contact .right form .fields{
+display: flex;
+}
+.contact .right form .field{
+height:45px;
+width:100%;
+margin-bottom: 15px;
+}
+.contact .right form .name{
+    margin-right:10px;
+}
+.contact .right form .email{
+    margin-left:10px;
+}
+.contact .right form .textarea {
+   height: 80px;
+  
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height:100%;
+    width:100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: Montserrat;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    /* resize: none; */
+}
+.contact .right form .button-area{
+    height: 50px;
+    width:170px;
+}
+.contact .right form .button-area button{
+    height: 100%;
+    width:100%;
+    border: 2px solid #92451b;
+    background: #92451b;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.contact .right form .button-area button:hover{
+    color:#92451b;
+    background: none;
 }
 
 
@@ -351,7 +461,7 @@ footer h2{
     margin-right:auto;
     font-size:20px;
 }
-.contact{
+/* .contact{
     display:flex;
     justify-content: flex-end;
     align-items: center;
@@ -361,7 +471,7 @@ footer h2{
     background-color: #24252a;
     padding: 10px 5%;
     color:snow;
-}
+} */
 .a-link a{
     color:cyan;
     display: inline-block;
@@ -392,7 +502,7 @@ footer h2{
 }
 }
 
-@media screen and (max-width:940px){
+@media screen and (max-width:947px){
     .max-width{
         
         padding: 0 50px;  
@@ -463,8 +573,14 @@ footer h2{
           height: 100px;
           width: 100px;
       }
+      .skills .skills-content .column,
+      .contact .contact-content .column,
+      .contact .contact-content .column .icons{
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:690px){
     .max-width{
         
         padding: 0 20px;  
@@ -476,7 +592,8 @@ footer h2{
     .home-content-3{
         font-size: 30px;
     }
-   .projects .projects-content .card{
+   .projects .projects-content .card,
+   .skills .skills-content .column{
        width: 100%;
         
     }
