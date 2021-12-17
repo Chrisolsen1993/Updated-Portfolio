@@ -1,10 +1,12 @@
-var string = "Olsen Ogouchi";
-var str = string.split("");
-var el = document.getElementsByClassName('home-content-2');
-(function animate() {
-str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
-var running = setTimeout(animate, 90);
-})();
+var name_chars = "Olsen Ogouchi".split('');
+var name_element = document.getElementsByClassName('home-content-2');
+var name_display_interval = setInterval(() => {
+  if (name_chars.length > 0) {
+    name_element.innerHTML += name_chars.shift();
+  } else {
+    clearInterval(name_display_interval);
+  }
+}, 1000);
 
 $(document).ready(function(){
     $(window).scroll(function(){
