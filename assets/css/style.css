@@ -77,7 +77,7 @@ html{
     font-weight: 500px;
     font-size:17px;
     /* color:#92451b; */
-    color: #24252a;
+    color: rgb(75, 71, 71);
     text-decoration: none;
 }
 .a-nav1{
@@ -90,6 +90,8 @@ html{
 
 }
 .nav-link li a{
+    text-decoration: none;
+   display: block;
     transition: all 0.7s ease 0s;
 }
 .nav-link li a:hover{

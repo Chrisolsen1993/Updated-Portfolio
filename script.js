@@ -54,6 +54,10 @@ $(".menu-btn").click(function(){
     $(".nav-link").toggleClass("active");
     $(".menu-btn i").toggleClass("active");
 })
+$(".a-nav").click(function(){
+    $(".nav-link").toggleClass("active");
+    $(".menu-btn i").toggleClass("active");
+})
 })
 
 
