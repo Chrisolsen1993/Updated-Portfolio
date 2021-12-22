@@ -217,8 +217,8 @@ section {
 }
 /* Projects section styling */
 .projects .card{
-    height: 350px;
-    max-height: 350px;
+    height: 300px;
+    max-height: 300px;
 }
 .projects .card p {
     text-align: justify;
@@ -641,6 +641,10 @@ footer{
    .skills .skills-content .column{
        width: 100%;
         
+    }
+    .projects .card{
+        height: 250px;
+        max-height: 250px;
     }
     
 }
